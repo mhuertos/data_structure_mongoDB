@@ -1,0 +1,184 @@
+//CLIENT
+{
+    "_id": 1,
+    "nom": "Joaquim",
+    "cognoms": "Diaz Dos Santos",
+    "adreça": "Carrer Pare Gari, 4, Vilanova i la Geltru",
+    "zip": "08800",
+    "localitat": 1002,
+    "provincia": 101,
+    "telefon": "622943522",
+    "comandes":
+              [{
+                  "_id": 201,
+                  "data": "01/12/2021 20:00:12",
+                  "tipus_entrega": "Domicili",
+                  "productes": [501, 502, 503, 505],
+                  "quantitat_pizzes": 2,
+                  "quantitat_hamburgueses": 0,
+                  "quantitat_begudes": 2,
+                  "preu_total": 27.00,
+                  "idBotiga": 301,
+                  "repartidor": 9112,
+                  "data_entrega": "01/12/2021 20:30:43"
+              },
+              {
+                  "_id": 202,
+                  "data": "09/12/2021 12:56:03",
+                  "tipus_entrega": "Recollida",
+                  "productes": [506, 508, 503, 505],
+                  "quantitat_pizzes": 0,
+                  "quantitat_hamburgueses": 2,
+                  "quantitat_begudes": 2,
+                  "preu_total": 25.00,
+                  "idBotiga": 301
+              }]
+}
+
+//provincia
+[{
+    "_id": 101,
+    "nom": "Barcelona",
+    "localitats":
+                [{
+                    "_id": 1001,
+                    "nom": "Vilanova i la Geltrú"
+                },
+                {
+                    "_id": 1002,
+                    "nom": "Castelldefels"
+                }]
+},
+{
+    "_id": 102,
+    "nom": "Girona",
+    "localitats":
+                [{
+                      "_id": 1003,
+                      "nom": "Rupit"
+                },
+                {
+                      "_id": 1004,
+                      "nom": "Banyoles"
+                }]
+}]
+
+//producte
+[{
+    "_id": 501,
+    "nom": "Hamburguesa",
+    "desc": "pa rodó amb carn de vedella i amanida variada+ salses",
+    "imatge": "null",
+    "preu": 9.20
+},
+{
+    "_id": 502,
+    "nom": "Hamburguesa vegetal",
+    "desc": "pa rodó amb tofuna i amanida variada + salses",
+    "imatge": "null",
+    "preu": 9.20
+},
+{
+    "_id": 503,
+    "nom": "Coca Cola",
+    "desc": "beguda refrescant amb sabor cola",
+    "imatge": "Null",
+    "preu": 2.30
+},
+{
+    "_id": 504,
+    "nom": "Aigua",
+    "desc": "beguda refrescant natural",
+    "imatge": "Null",
+    "preu": 1.50
+},
+{
+    "_id": 505,
+    "nom": "Fanta",
+    "desc": "beguda refrescant gassosa amb sabor taronja/llimona",
+    "imatge": "Null",
+    "preu": 2.30
+},
+{
+    "_id": 506,
+    "nom": "pizza napolitana",
+    "desc": "massa de pa amb ingredients variats a la superfície",
+    "imatge": "null",
+    "preu": 10.20,
+    "categoria": 6010
+},
+{
+    "_id": 507,
+    "nom": "pizza barbacoa",
+    "desc": "massa de pa amb ingredients variats a la superfície",
+    "imatge": "null",
+    "preu": 10.20,
+    "categoria": 6012
+},
+{
+    "_id": 508,
+    "nom": "pizza ponzoña",
+    "desc": "massa de pa amb ingredients variats a la superfície",
+    "imatge": "null",
+    "preu": 10.20,
+    "categoria": 6011
+}]
+
+
+//categoria pizzes
+[{
+    "_id": 6010,
+    "nom": "italianes"
+},
+{
+    "_id": 6011,
+    "nom": "espagnoles"
+},
+{
+    "_id": 6012,
+    "nom": "american"
+}]
+
+
+//botiga
+[{
+    "_id": 301,
+    "adreça": "Rambla Salvador Samà, Vilanova i la Geltrú",
+    "zip": "08800",
+    "localitat": 1001,
+    "provincia": 101
+},
+{
+    "_id": 302,
+    "adreça": "Carrer Major de Castelldefels",
+    "zip": "08860",
+    "localitat": 1002,
+    "provincia": 101
+},
+{
+    "_id": 303,
+    "adreça": "Carrer del Pont, Rupit",
+    "zip": "08569",
+    "localitat": 1003,
+    "provincia": 102
+}]
+
+//empleat
+[{
+    "_id": 9111,
+    "nom": "Julieta",
+    "cognoms": "Rossana Ordoñez",
+    "nif": "34219583T",
+    "telefon": "612934602",
+    "tipus_feina": "cuinera",
+    "idBotiga": 302
+},
+{
+    "_id": 9112,
+    "nom": "Gustavo",
+    "cognoms": "Pelaez Miravant",
+    "nif": "45933421G",
+    "telefon": "666440929",
+    "tipus_feina": "repartidor",
+    "idBotiga": 301
+}]

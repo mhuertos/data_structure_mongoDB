@@ -1,0 +1,63 @@
+
+//client
+[{
+    "_id": 5001,
+    "nom": "Sarah",
+    "adreça": "Carrer Maragall, 87, Barcelona",
+    "telefon": "611900456",
+    "email": "sarah_haras@gmail.com",
+    "data_registre": new Date(),
+    "deriva_client": "null"
+},
+{
+    "_id": 5000,
+    "nom": "Rabina",
+    "adreça": "Carrer Coroleu, 3, Gavà",
+    "telefon": "681302561",
+    "email": "rg_freedom@gmail.com",
+    "data_registre": "12/12/2021",
+    "deriva_client": 5001
+}]
+
+//proveedor
+{
+    "_id": 344433311,
+    "nom": "Frontglass",
+    "adreça":
+            {
+                "carrer": "Consell de Cent",
+                "numero": 100,
+                "pis": 2,
+                "porta": "null",
+                "zip": "08030",
+                "pais": "España"
+            },
+    "telefon": "665432876",
+    "fax": "934126432",
+    "NIF": "54363075T"
+}
+
+//producto
+{
+    "_id": 4000,
+    "marca": "Dolce & Gabanna",
+    "graduacio": 0.25,
+    "tipus_montura": "flotant",
+    "color_montura": "azul",
+    "precio": 120.00,
+    "proveedor": 344433311
+}
+
+//empleado
+{
+    "_id": 3311,
+    "nom": "Carla Perez"
+}
+
+//compra
+{
+    "_id": ObjectId(),
+    "id_client": 5000,
+    "id_gafa": 4000,
+    "id_empleado": 3311
+}

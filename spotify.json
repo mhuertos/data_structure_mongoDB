@@ -1,0 +1,201 @@
+//Usuario
+[{
+    "_id": 1,
+    "nom": "Alfredo Garcia",
+    "email": "al_garcia@gmail.com",
+    "password": "1234",
+    "data_naix": "23/06/2000",
+    "sexe": "M",
+    "pais": "Espanya",
+    "zip": "08830",
+    "tipus_user": "premium",
+    "metode_pagament":
+                      {
+                          "_id": 301,
+                          "PayPal": "alGarcia"
+                      },
+    "suscripcions":
+                      {
+                          "_id": 201,
+                          "data_inici": "3/1/2019",
+                          "data_final": "3/1/2020",
+                          "forma_pagament": 301
+                      },
+    "idArtFollows": [801]
+},
+{
+    "_id": 2,
+    "nom": "Soraya Marquez",
+    "email": "soma21@gmail.com",
+    "password": "5678",
+    "data_naix": "3/08/1997",
+    "sexe": "F",
+    "pais": "Espanya",
+    "zip": "08800",
+    "tipus_user": "free"
+},
+{
+    "_id": 3,
+    "nom": "Sarah Wahab",
+    "email": "sarilla_12@gmail.com",
+    "password": "12334",
+    "data_naix": "9/10/2002",
+    "sexe": "F",
+    "pais": "Espanya",
+    "zip": "08830",
+    "tipus_user": "premium",
+    "metode_pagament":
+                      {
+                          "_id": 302,
+                          "num_targeta": "4676 3746 9000 3211 3421",
+                          "codi_seguretat": "876"
+                      },
+     "suscripcions":
+                       {
+                           "_id": 202,
+                           "data_inici": "12/2/2018",
+                           "data_final": "12/2/2019",
+                           "forma_pagament": 302
+                       },
+     "idArtFollows": [801, 802]
+}]
+
+//pagaments
+[{
+    "_id": 401,
+    "idUsuari": 3,
+    "data": "12/2/2018",
+    "total": 33.95
+},
+{
+    "_id": 402,
+    "idUsuari": 1,
+    "data": "12/6/2019",
+    "total": 12.95
+},
+{
+    "_id": 403,
+    "idUsuari": 3,
+    "data": "12/8/2019",
+    "total": 10.00
+}]
+
+
+//playslist activa
+
+[{
+    "_id": 501,
+    "idCreatorUser": 3,
+    "estat": "activa",
+    "tipus": "compartida",
+    "cançons":
+              [{
+                "_id": 701,
+                "idUsuariComparteix": 2,
+                "data": "22/12/2017"
+              },
+              {
+                "_id": 702,
+                "idUsuariComparteix": 2,
+                "data": "22/12/2017"
+              },
+              {
+                "_id": 703,
+                "idUsuariComparteix": 2,
+                "data": "22/12/2017"
+              }]
+},
+{
+    "_id": 502,
+    "idCreatorUser": 1,
+    "tipus": "compartida",
+    "estat": "esborrada",
+    "cançonsAfegides":
+              [{
+                  "_id": 706,
+                  "idUsuariComparteix": 1,
+                  "data": "02/01/2011"
+              },
+              {
+                  "_id": 704,
+                  "idUsuariComparteix": 2,
+                  "data": "15/08/2015"
+              },
+              {
+                  "_id": 705,
+                  "idUsuariComparteix": 3,
+                  "data": "29/03/2016"
+              }]
+}]
+
+//album
+[{
+    "_id": 601,
+    "idArtista": 801,
+    "titol": "El mal querer",
+    "any": "2019",
+    "imagenPortada": "null",
+    "cançons": [701, 702, 703]
+},
+{
+    "_id": 602,
+    "idArtista": 802,
+    "titol": "Californication",
+    "any": "1999",
+    "imatgePortada": "null",
+    "cançons": [704, 705, 706]
+}]
+
+//cançons
+[{
+    "_id": 701,
+    "titol": "Bagadad",
+    "durada": "00:04:25",
+    "numRepro": 30244567
+},
+{
+    "_id": 702,
+    "titol": "Di mi nombre",
+    "durada": "00:03:02",
+    "numRepro": 400564127
+},
+{
+    "_id": 703,
+    "titol": "Malamente",
+    "durada": "00:04:05",
+    "numRepro": 345645098
+},
+{
+    "_id": 704,
+    "titol": "Around the world",
+    "durada": "00:03:58",
+    "numRepro": 344326788
+},
+{
+    "_id": 705,
+    "titol": "Otherside",
+    "durada": "00:04:15",
+    "numRepro": 890733854
+},
+{
+    "_id": 706,
+    "titol": "Scar Tissue",
+    "durada": "00:03:37",
+    "numRepro": 789432685
+}]
+
+// artista
+[{
+    "_id": 801,
+    "nom": "Rosalia",
+    "imatge": "null",
+    "artistesSeguits": [802],
+    "idFollowers": [1, 2, 3]
+},
+{
+    "_id": 802,
+    "nom": "Red Hot Chilli Peppers",
+    "imatge": "null",
+    "artistesSeguits": "null",
+    "idFollowers": [2, 3]
+}]

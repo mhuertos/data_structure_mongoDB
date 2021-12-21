@@ -1,0 +1,115 @@
+[{
+    "_id": 1,
+    "email": "mhuertos@hotmail.com",
+    "data_naixement": "21/11/1992",
+    "sexe": "M",
+    "pais": "España",
+    "Zip": "08023",
+    "SuscribeTo": [202]
+},
+{
+    "_id": 2,
+    "email": "joan@gmail.com",
+    "data_naixement": "8/09/1995",
+    "sexe": "M",
+    "pais": "España",
+    "Zip": "08001",
+    "SuscribeTo": [201, 202]
+},
+{
+    "_id": 3,
+    "email": "trauss@gmail.com",
+    "data_naixement": "29/01/1991",
+    "sexe": "F",
+    "pais": "España",
+    "Zip": "08800",
+    "SuscribeTo": "null"
+}]
+
+// Video
+{
+  "_id": 101,
+  "titol": "Como programar con Pyhton",
+  "desc": "Fundamentos básicos de Python",
+  "length": "654GB",
+  "namFile": "video_python_1.mov",
+  "duracion": "00:10:23",
+  "thumbnail": "null",
+  "numRepro": "2330654",
+  "numLikes": "1",
+  "numDislike": "0",
+  "etiqueta":
+              [{
+                  "_id": 701,
+                  "nom": "informatica"
+              },
+              {
+                  "_id": 701,
+                  "nom": "IA"
+              }],
+  "estat": "public",
+  "idCreatorUsuari": 1,
+  "dataPublicacio": "03/03/2011",
+  "comentarios":
+                [{
+                      "_id": 501,
+                      "idUsuario": 2,
+                      "desc": "Thanks for that video, very helpfull",
+                      "data": "5/10/2014",
+                      "valoracioComentari":
+                                          [{
+                                                  "_id": 601,
+                                                  "idUsuari": 3,
+                                                  "valoracio": "Like",
+                                                  "data": "6/10/2014"
+                                              },
+                                              {
+                                                  "_id": 602,
+                                                  "idUsuari": 1,
+                                                  "valoracio": "Like",
+                                                  "data": "6/10/2014"
+                                          }]
+                 },
+                 {
+                     "_id": 502,
+                     "idUsuari": 3,
+                     "desc": "Ou..perfect! That's just what I needed",
+                     "data": "5/11/2015",
+                     "valoracioComentari": "null"
+                }],
+  "valoracioVideo":
+              {
+                  "_id": 801,
+                  "valoracio": "like",
+                  "idUsuari": 2,
+                  "data": "5/10/2014"
+              }
+}
+
+
+//Canal
+[{
+    "_id": 201,
+    "nom": "UpLoadVideos",
+    "dataCreation": "03/03/2011",
+    "idCreatorUser": 1,
+    "idSuscUser": [2]
+},
+{
+    "_id": 202,
+    "nom": "DancingVideos",
+    "dataCreation": "14/05/2016",
+    "idCreatorUser": 3,
+    "idSuscUser": [1, 2]
+}]
+
+
+// Playlist
+{
+  "_id": 401,
+  "owner": 2,
+  "nom": "Videos pel tren",
+  "date": "01/03/2014",
+  "estat": "publica",
+  "videos": [101]
+}
